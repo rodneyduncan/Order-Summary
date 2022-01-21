@@ -1,0 +1,121 @@
+  .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+		:root{
+			--Paleblue: hsl(225, 100%, 94%);
+			--Brightblue: hsl(245, 75%, 52%);
+			--Verypaleblue: hsl(225, 100%, 98%);
+			--Desaturatedblue: hsl(224, 23%, 55%);
+			--Darkblue: hsl(223, 47%, 23%);
+		}
+		*,
+		*::after,
+		*::before{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			width: 100%;
+			background: url('pattern-background-mobile.svg') no-repeat center;
+			background-size: cover;
+			background-color: var(--Paleblue);
+			text-align: center;
+			font-family: 'Red Hat Display', sans-serif;
+			font-size: 1rem;
+			color: var(--Desaturatedblue);
+		}
+		img{
+			max-width: 100%;
+			display: block;
+		}
+
+		h1{
+			color: var(--Darkblue);
+			font-size: 1.5rem;
+			padding: 1em 0em;
+		}
+		.information{
+			line-height: 1.5em;
+			word-spacing: .2em;
+			padding-bottom: 1.1em;
+		}
+		.container{
+			max-width: 375px;
+			margin: 0 auto;
+		}
+		.header-img{
+		border-top-right-radius: 10px 10px;
+		border-top-left-radius: 10px 10px;
+		margin-top: 1em;
+		}
+		.content{
+			background: #fff;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			margin-bottom: 1.7em;
+			box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.12);
+		}
+		.price-noti{
+			background: var(--Verypaleblue);
+			width: 80%;
+			margin: 0 auto;
+			padding: .5em .1em;
+			border-radius: 10px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+		
+		}
+		.price-noti-p{
+			display: flex;
+		}
+		.btn{
+			display: block;
+			width: 80%;
+			margin: 0 auto;
+			padding: 1em 0;
+			background: var(--Brightblue);
+			color: #fff;
+			font-weight: 500;
+			font-family: 'Red Hat Display', sans-serif;
+			text-decoration: none;
+		}
+		.payment-btn{
+			margin-top: 1.3em;
+			border-radius: 15px;
+			box-shadow: 5px 10px 22px 0px rgba(0,0,0,0.23);
+		}
+		.cancel-btn{
+			background-color: transparent;
+			color: var(--Desaturatedblue);
+			margin-bottom: 1.3em;
+		}
+		.change-price{
+			color: var(--Brightblue);
+		}
+
+		.change-price:focus,
+		.change-price:hover,
+		.cancel-btn:focus,
+		.cancel-btn:hover
+		{
+			color: #A865c9;
+		}
+		.payment-btn:focus,
+		.payment-btn:hover{
+			background: #A865c9;
+		}
+
+
+		@media (min-width: 500px) {
+			body{
+				background: url('pattern-background-desktop.svg') no-repeat center;
+				background-color: var(--Paleblue);
+				background-size: cover;
+			}
+			html{
+				padding: 0;
+			}
+		}
